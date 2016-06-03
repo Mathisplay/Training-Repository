@@ -11,8 +11,9 @@
 <script>
 function shakewindow() {
 	window.open("cos.html","","width=600,height=500")
+	requestAnimationFrame(shakewindow());
 }
-shakewindow();
+requestAnimationFrame(shakewindow());
 </script>
 
 <form>
