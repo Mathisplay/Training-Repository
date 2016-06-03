@@ -17,12 +17,11 @@ function shakewindow() {
         window.moveBy(0,-x);
         window.moveBy(-x,0);
         }
-        window.setTimeout(shakewindow(),200);
 }
 </script>
 
 <form>
-<input type="button" onClick="shakewindow()" value="Shake Window">
+<input type="button" onClick="window.setInterval(shakewindow,200);" value="Shake Window">
 </form>
 
 </body>
