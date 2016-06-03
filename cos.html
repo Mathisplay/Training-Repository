@@ -10,18 +10,12 @@
 
 <script>
 function shakewindow() {
-    var x=10
-    for (i=0;i,i<20;i++){
-        window.moveBy(50,100);
-        window.moveBy(50,200);
-        window.moveBy(50,300);
-        window.moveBy(50,400);
-        }
+	window.moveBy(50,100);
 }
 </script>
 
 <form>
-<input type="button" onClick="window.setInterval(shakewindow,200);" value="Shake Window">
+<input type="button" onClick="shakewindow()" value="Shake Window">
 </form>
 
 </body>
