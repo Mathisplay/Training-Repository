@@ -11,9 +11,8 @@
 <script>
 function shakewindow() {
 	moveTo(Math.floor(Math.random())*(screen.width/2-300),Math.floor(Math.random())*(screen.height/2-250));
-	requestAnimationFrame(shakewindow());
 }
-requestAnimationFrame(shakewindow());
+setInterval(shakewindow, 200);
 </script>
 
 <form>
